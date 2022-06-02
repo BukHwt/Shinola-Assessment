@@ -16,10 +16,10 @@
 get_header();
 ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<section id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
 
-		<?php
+        <?php
 		if ( have_posts() ) {
 
 			// Load posts loop.
@@ -39,8 +39,8 @@ get_header();
 		}
 		?>
 
-		</main><!-- .site-main -->
-	</section><!-- .content-area -->
+    </main><!-- .site-main -->
+</section><!-- .content-area -->
 
 <?php
 get_footer();

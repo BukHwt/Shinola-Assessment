@@ -18,7 +18,7 @@ add_shortcode('rest-ajax', 'rest_ajax_shortcode');
 
 
 function rest_ajax_shortcode () {
-    ?> <p id="ajax-text"></p>
+    ?> <div id="ajax-text"></div>
 <?php
     //Write Ajax to show info in shortcode
     wp_enqueue_script('rest-ajax-scripts', plugins_url('assets/js/plugin-ajax.js', __FILE__), ['jquery'], '1.0', true);

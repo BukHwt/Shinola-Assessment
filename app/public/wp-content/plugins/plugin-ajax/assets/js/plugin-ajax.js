@@ -5,7 +5,7 @@ jQuery(document).ready(function ($) {
     console.log(data);
     data.forEach((block) => {
       $("#ajax-text").append(
-        "<h1 id=" +
+        "<h1 class='post-title' id=" +
           block.id +
           '">' +
           block.title.rendered +
@@ -14,6 +14,9 @@ jQuery(document).ready(function ($) {
           "<img src=" +
           block._embedded["wp:featuredmedia"][0].link +
           "/>" +
+          "</p>" +
+          "<p class='post-excerpt'>" +
+          block.excerpt.rendered +
           "</p>"
       );
     });

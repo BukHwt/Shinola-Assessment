@@ -74,9 +74,7 @@ Included in theme screenshot and in block patterns.
 /**
  * Required Variables
  */
-.entry-content,
-.entry-title,
-.post-title {
+.ajax-text {
   display: flex;
   flex-direction: column;
   align-items: center;

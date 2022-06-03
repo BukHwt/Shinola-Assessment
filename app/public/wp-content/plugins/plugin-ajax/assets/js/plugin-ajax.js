@@ -10,14 +10,14 @@ jQuery(document).ready(function ($) {
           '">' +
           block.title.rendered +
           "</h1>" +
+          "<div class='shinola-post'>" +
           "<p>" +
-          "<img src=" +
+          "<img class='shinola-img' src=" +
           block._embedded["wp:featuredmedia"][0].link +
           "/>" +
-          "</p>" +
-          "<p class='post-excerpt'>" +
           block.excerpt.rendered +
-          "</p>"
+          "</p>" +
+          "</div>"
       );
     });
   });

@@ -1,0 +1,17 @@
+/*
+ Theme Name:   Seedlet Child
+ Description:  Seedlet Child
+ Author:       Big Steve
+ Template:     seedlet
+ Version:      1.0.0
+ Text Domain:  seedlet
+*/
+
+.shinola-post {
+  display: flex;
+  flex-direction: row;
+}
+
+.shinola-img {
+  min-width: 100px;
+}

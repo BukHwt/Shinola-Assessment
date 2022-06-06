@@ -7,11 +7,39 @@
  Text Domain:  seedlet
 */
 
-.shinola-post {
-  display: flex;
-  flex-direction: row;
+#main,
+#content,
+#ajax-text,
+.entry-content {
+  margin: 0;
+  padding: 0;
 }
 
-.shinola-img {
-  min-width: 100px;
+#main {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ajax-text {
+  max-width: 90vw;
+}
+
+.shinola-post {
+  text-align: center;
+}
+
+.entry-title {
+  text-align: center;
+  border: 1px solid black;
+}
+
+.banner-container {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
 }

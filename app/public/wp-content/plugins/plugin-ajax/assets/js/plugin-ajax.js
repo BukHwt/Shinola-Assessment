@@ -5,19 +5,21 @@ jQuery(document).ready(function ($) {
     console.log(data);
     data.forEach((block) => {
       $("#ajax-text").append(
-        "<h1 class='post-title' id=" +
+        "<div class='banner-container'>" +
+          "<a>" +
+          "<img class='shinola-img' src=" +
+          block._embedded["wp:featuredmedia"][0].link +
+          "/>" +
+          "<div class='shinola-post'>" +
+          "<h1 class='post-title' id=" +
           block.id +
           '">' +
           block.title.rendered +
           "</h1>" +
-          "<div class='shinola-post'>" +
-          "<p>" +
-          "<img class='shinola-img' src=" +
-          block._embedded["wp:featuredmedia"][0].link +
-          "/>" +
           block.excerpt.rendered +
-          "</p>" +
-          "</div>"
+          "</div>" +
+          "</div>" +
+          "<hr>"
       );
     });
   });

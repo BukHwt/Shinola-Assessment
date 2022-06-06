@@ -16,7 +16,6 @@
 }
 
 #main {
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,13 +25,12 @@
   max-width: 90vw;
 }
 
-.shinola-post {
-  text-align: center;
+.shinola-post h3 {
+  padding-bottom: 25px;
 }
 
 .entry-title {
   text-align: center;
-  border: 1px solid black;
 }
 
 .banner-container {
@@ -42,4 +40,13 @@
   justify-content: center;
   gap: 5px;
   padding: 10px;
+}
+
+.shinola-img {
+  padding: 15px;
+  border-radius: 10%;
+}
+
+.img-link {
+  border: 0px !important;
 }
